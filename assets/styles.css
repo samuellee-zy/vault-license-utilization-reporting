@@ -1,0 +1,60 @@
+/* Base styles */
+body {
+  font-family: "Inter", sans-serif; /* HashiCorp font */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background */
+  color: #333; /* Dark text */
+}
+
+/* Header styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #6b6e73; /* Header color */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333; /* Sub-header color */
+  margin-bottom: 15px;
+}
+
+/* Link styles */
+a {
+  color: #ffcf25; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Upload styles */
+#upload-data {
+  background-color: #ffffff; /* White background for upload box */
+  border: 2px solid #00bfb3; /* Border color */
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+#upload-data:hover {
+  border-color: #009a8d; /* Darker border on hover */
+}
+
+/* Graph styles */
+#output-graph {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}
