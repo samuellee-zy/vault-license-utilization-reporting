@@ -29,7 +29,7 @@ First, clone this repository to your local machine:
 Open your terminal or command prompt and run the following command to pull the Docker image from Docker Hub:
 
 ```bash
-docker pull samuelleezy/vault-license-utilitisation-reporting
+docker pull samuelleezy/vault-license-utilitisation-reporting:0.0.2
 ```
 
 ### 2. Run the Docker Container
@@ -37,7 +37,7 @@ docker pull samuelleezy/vault-license-utilitisation-reporting
 After pulling the image, you can run the Docker container. The following command maps port 8050 of the container to port 8050 on your local machine:
 
 ```bash
-docker run -d -p 8050:8050 samuelleezy/vault-license-utilitisation-reporting
+docker run -d -p 8050:8050 samuelleezy/vault-license-utilitisation-reporting:0.0.2
 ```
 
 ### 3. Access the Web Application
