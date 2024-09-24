@@ -241,7 +241,7 @@ def process_and_plot(json_data, num_months, show_trendline, degree):
         fig.update_layout(
             height=700,
             showlegend=False,
-            title_text="Vault Client Count Estimates",
+            # title_text="Vault Client Count Estimates",
             barmode='group'
         )
 
