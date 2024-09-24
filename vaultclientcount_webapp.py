@@ -65,10 +65,27 @@ app.layout = html.Div([
         ]
     ),
 
-    # Output section for the table above the graph
+    # Output section for the estimates table
+    html.H3("Monthly Overview of Vault Clients", className='table-title'),
     dash_table.DataTable(id='estimates-table'),
-    dcc.Graph(id='output-graph'),
     
+    # Average clients display table
+    html.H3("Average Vault Clients", className='table-title'),
+    dash_table.DataTable(
+        id='average-clients-table',
+        columns=[
+            {"name": "Metric", "id": "metric"},
+            {"name": "Avg Current Month Estimate", "id": "current_month_estimate"},
+            {"name": "Avg Previous Month Complete", "id": "previous_month_complete"}
+        ],
+        data=[],  # Initial empty data
+        style_table={'overflowX': 'auto'},
+        style_cell={'textAlign': 'left', 'padding': '10px'},
+        style_header={'fontWeight': 'bold'},
+    ),
+
+    dcc.Graph(id='output-graph'),
+
     # Average clients display
     html.Div(id='average-clients')
 ])
@@ -91,7 +108,7 @@ def process_and_plot(json_data, num_months, show_trendline, degree):
     df['timestamp'] = pd.to_datetime(df['timestamp'].str.slice(0, 26), errors='coerce')
     df = df.dropna(subset=['timestamp'])
     
-    if pd.api.types.is_datetime64_any_dtype(df['timestamp']):
+    if not df.empty and pd.api.types.is_datetime64_any_dtype(df['timestamp']):
         df['year_month'] = df['timestamp'].dt.to_period('M').astype(str)
         latest_records = df.loc[df.groupby('year_month')['timestamp'].idxmax()]
         
@@ -113,10 +130,29 @@ def process_and_plot(json_data, num_months, show_trendline, degree):
 
         # Calculate average clients over the months evaluated
         average_clients = {
-            "Entity": output_df["current_month_estimate_entity"].mean(),
-            "Non-Entity": output_df["current_month_estimate_nonentity"].mean(),
-            "Secret Sync": output_df["current_month_estimate_secret_sync"].mean()
+            "Entity": {
+                "current_month_estimate": output_df["current_month_estimate_entity"].mean(),
+                "previous_month_complete": output_df["previous_month_complete_entity"].mean()
+            },
+            "Non-Entity": {
+                "current_month_estimate": output_df["current_month_estimate_nonentity"].mean(),
+                "previous_month_complete": output_df["previous_month_complete_nonentity"].mean()
+            },
+            "Secret Sync": {
+                "current_month_estimate": output_df["current_month_estimate_secret_sync"].mean(),
+                "previous_month_complete": output_df["previous_month_complete_secret_sync"].mean()
+            }
         }
+
+        # Prepare data for the average clients table
+        average_clients_table = [
+            {"metric": "Entity", "current_month_estimate": average_clients["Entity"]["current_month_estimate"], 
+             "previous_month_complete": average_clients["Entity"]["previous_month_complete"]},
+            {"metric": "Non-Entity", "current_month_estimate": average_clients["Non-Entity"]["current_month_estimate"], 
+             "previous_month_complete": average_clients["Non-Entity"]["previous_month_complete"]},
+            {"metric": "Secret Sync", "current_month_estimate": average_clients["Secret Sync"]["current_month_estimate"], 
+             "previous_month_complete": average_clients["Secret Sync"]["previous_month_complete"]}
+        ]
 
         # Create Plotly figure with subplots
         fig = make_subplots(
@@ -185,38 +221,37 @@ def process_and_plot(json_data, num_months, show_trendline, degree):
         # Update layout
         fig.update_layout(
             height=700,
-            showlegend=False
+            showlegend=False,
+            title_text="Vault Client Count Estimates",
+            barmode='group'
         )
 
-        return fig, output_df, average_clients  # Return output_df and average clients
-    else:
-        return None, None, None
+        return output_df, fig, average_clients_table
 
-# Combined callback function to update the graph and table when a file is uploaded, trendline options are changed, or the number of months changes
+    # Return empty values if the DataFrame is not valid
+    return pd.DataFrame(), go.Figure(), []
+
+# Combined callback function to update the graph and tables when a file is uploaded, trendline options are changed, or the number of months changes
 @app.callback(
     [Output('output-graph', 'figure'),
      Output('estimates-table', 'data'),
-     Output('average-clients', 'children')],
+     Output('average-clients-table', 'data')],
     [Input('upload-data', 'contents'),
      Input('num-months', 'value'),
      Input('show-trendline', 'value'),
-     Input('trendline-degree', 'value')]  # Add the input for number of additional months and polynomial degree
+     Input('trendline-degree', 'value')]
 )
 def update_output(contents, num_months, show_trendline, degree):
-    if contents is not None:
-        json_data = parse_json(contents)
-        # Ensure num_months is valid; default to 0 if None
-        num_months = num_months if num_months is not None else 0
-        fig, output_df, average_clients = process_and_plot(json_data, num_months, show_trendline, degree)  # Pass the num_months and degree
-        
-        # Prepare data for the table
-        table_data = output_df.to_dict('records') if output_df is not None else []
+    if contents is None:
+        return go.Figure(), [], []
 
-        # Calculate average clients display
-        avg_clients_display = f"Average Clients: Entity - {average_clients['Entity']:.2f}, Non-Entity - {average_clients['Non-Entity']:.2f}, Secret Sync - {average_clients['Secret Sync']:.2f}" if average_clients else "No data available"
+    json_data = parse_json(contents)
+    estimates_df, figure, average_clients_table = process_and_plot(json_data, num_months, show_trendline, degree)
 
-        return fig, table_data, avg_clients_display
-    return {}, [], "No data available"
+    # Convert estimates DataFrame to the format required by the DataTable
+    estimates_data = estimates_df.to_dict('records')
+
+    return figure, estimates_data, average_clients_table
 
 # Run the app
 if __name__ == '__main__':
