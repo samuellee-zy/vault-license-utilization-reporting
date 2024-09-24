@@ -1,0 +1,58 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Pytest cache
+.cache
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Local configuration files
+*.env
+
+# Logs
+*.log
+
+# Miscellaneous
+*.sqlite3
+*.db
+
+# Docker specific files
+docker-compose.yml
+docker-compose.override.yml
+
+# Ignore files created by Docker
+**/*.tar
+**/*.gz
