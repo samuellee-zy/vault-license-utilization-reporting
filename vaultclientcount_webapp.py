@@ -14,7 +14,7 @@ app = Dash(__name__)
 
 app.layout = html.Div([
     html.Link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap", rel="stylesheet"),
-    html.H1("Snapshot Data Dashboard"),
+    html.H1("Vault Manual License Utilisation Dashboard"),
     html.H4("This app requires a JSON data payload."),
     html.H4([
         "Follow these steps to retrieve the necessary payload: ", 
