@@ -98,7 +98,7 @@ Note that this is a community project and is not supported by HashiCorp. Feel fr
 ## Acknowledgement
 
 - To Shaun Stuart for the question that led to the creation of this project
-- To David Joo for the suggestions on making this more reusable for everyone
+- To David Joo for the suggestions and inspirations that enhanced the experienced of this dashboard, and enabling me to make this reusable for all.
 - [Dash](https://dash.plotly.com/) for providing a powerful framework to build this web application.
 - [Plotly](https://plotly.com/python/) for the graphing library that makes visualizations easy.
 - [Pandas](https://pandas.pydata.org/) for data manipulation and analysis.
