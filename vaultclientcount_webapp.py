@@ -2,7 +2,7 @@
 
 import pandas as pd
 import json
-from dash import Dash, html, dcc, callback_context
+from dash import Dash, html, dcc, callback_context, dash_table
 from dash.dependencies import Input, Output
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
@@ -21,6 +21,7 @@ app.layout = html.Div([
         html.A("Manual license utilization reporting", href="https://developer.hashicorp.com/vault/docs/enterprise/license/manual-reporting", target="_blank")
     ]),
 
+    # Upload JSON section
     dcc.Upload(
         id='upload-data',
         children=html.Div([html.H3([('Drag and Drop or '), html.A('Select a JSON File')])]),
@@ -28,15 +29,50 @@ app.layout = html.Div([
         multiple=False
     ),
 
-    html.Div([
-        html.Label('Specify the additional number of months to estimate trendline:'),
-        dcc.Input(id='num-months', type='number', value=0, min=0, placeholder='Additional Months')
-    ]),
+    # Input section for trendline options (updated layout)
+    html.Div(
+        className="input-section",
+        children=[
+            html.Label('Specify the additional number of months to estimate trendline:'),
+            dcc.Input(id='num-months', type='number', value=0, min=0),
 
-    html.Div(id='output-file-upload'),
-    dcc.Graph(id='output-graph')
+            html.Label('Select trendline type (polynomial degree):'),
+            dcc.Dropdown(
+                id='trendline-degree',
+                options=[
+                    {'label': 'Linear', 'value': 1},
+                    {'label': 'Quadratic', 'value': 2},
+                    {'label': 'Cubic', 'value': 3},
+                    {'label': 'Quartic', 'value': 4}
+                ],
+                value=2,  # Default to quadratic
+                clearable=False,
+                className='dropdown'
+            ),
 
+            html.Div(
+                className="checklist",
+                children=[
+                    html.Label("Show Trendline"),
+                    dcc.Checklist(
+                        id='show-trendline',
+                        options=[{'label': '', 'value': 'show'}],  # Empty label so the text appears outside
+                        value=[''],  # Default is to show trendline
+                        labelStyle={'display': 'inline-block'}
+                    )
+                ]
+            )
+        ]
+    ),
+
+    # Output section for the table above the graph
+    dash_table.DataTable(id='estimates-table'),
+    dcc.Graph(id='output-graph'),
+    
+    # Average clients display
+    html.Div(id='average-clients')
 ])
+
 
 # Helper function to parse the uploaded JSON data
 def parse_json(contents):
@@ -45,7 +81,7 @@ def parse_json(contents):
     return json.loads(decoded.decode('utf-8'))
 
 # Helper function to process the data and generate a plot
-def process_and_plot(json_data, num_months):
+def process_and_plot(json_data, num_months, show_trendline, degree):
     snapshots = json_data.get("snapshots", [])
     
     # Convert snapshots to DataFrame
@@ -75,6 +111,13 @@ def process_and_plot(json_data, num_months):
         # Convert to DataFrame
         output_df = pd.DataFrame(output)
 
+        # Calculate average clients over the months evaluated
+        average_clients = {
+            "Entity": output_df["current_month_estimate_entity"].mean(),
+            "Non-Entity": output_df["current_month_estimate_nonentity"].mean(),
+            "Secret Sync": output_df["current_month_estimate_secret_sync"].mean()
+        }
+
         # Create Plotly figure with subplots
         fig = make_subplots(
             rows=2, cols=3,
@@ -100,40 +143,41 @@ def process_and_plot(json_data, num_months):
         )
 
         # Function to add trendline and projections
-        def add_trendline(fig, x, y, row, col):
-            x_numeric = np.arange(len(y))
-            z = np.polyfit(x_numeric, y, 2)
-            p = np.poly1d(z)
-            trendline = p(x_numeric)
+        def add_trendline(fig, x, y, row, col, degree):
+            if 'show' in show_trendline:  # Only add trendline if checkbox is checked
+                x_numeric = np.arange(len(y))
+                z = np.polyfit(x_numeric, y, degree)  # Use the degree selected by the user
+                p = np.poly1d(z)
+                trendline = p(x_numeric)
 
-            # Future projections based on user input
-            future_x = np.arange(len(y), len(y) + num_months)  # Use num_months here
-            future_y = p(future_x)
-            all_x = np.concatenate((x_numeric, future_x))
-            all_y = np.concatenate((trendline, future_y))
+                # Future projections based on user input
+                future_x = np.arange(len(y), len(y) + num_months)  # Use num_months here
+                future_y = p(future_x)
+                all_x = np.concatenate((x_numeric, future_x))
+                all_y = np.concatenate((trendline, future_y))
 
-            # Create a date range for the x-axis
-            future_dates = pd.date_range(start=pd.to_datetime(output_df['year_month'].min() + '-01'), 
-                                          periods=len(all_x), freq='ME')
-            
-            # Add trendline and projections to the plot
-            fig.add_trace(go.Scatter(
-                x=future_dates, 
-                y=all_y, 
-                mode='lines', 
-                name='Trendline & Projection', 
-                line=dict(color='red', dash='dash')
-            ), row=row, col=col)
+                # Create a date range for the x-axis
+                future_dates = pd.date_range(start=pd.to_datetime(output_df['year_month'].min() + '-01'), 
+                                             periods=len(all_x), freq='ME')
+                
+                # Add trendline and projections to the plot
+                fig.add_trace(go.Scatter(
+                    x=future_dates, 
+                    y=all_y, 
+                    mode='lines', 
+                    name=f'Trendline (Degree {degree}) & Projection', 
+                    line=dict(color='red', dash='dash')
+                ), row=row, col=col)
 
         # Add plots to the subplots and trendlines
         fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['current_month_estimate_entity'], name="Entity Estimate"), row=1, col=1)
-        add_trendline(fig, np.arange(len(output_df['current_month_estimate_entity'])), output_df['current_month_estimate_entity'], 1, 1)
+        add_trendline(fig, np.arange(len(output_df['current_month_estimate_entity'])), output_df['current_month_estimate_entity'], 1, 1, degree)
 
         fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['current_month_estimate_nonentity'], name="Non-Entity Estimate"), row=1, col=2)
         fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['current_month_estimate_secret_sync'], name="Secret Sync Estimate"), row=1, col=3)
         
         fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['previous_month_complete_entity'], name="Previous Month Entity"), row=2, col=1)
-        add_trendline(fig, np.arange(len(output_df['previous_month_complete_entity'])), output_df['previous_month_complete_entity'], 2, 1)
+        add_trendline(fig, np.arange(len(output_df['previous_month_complete_entity'])), output_df['previous_month_complete_entity'], 2, 1, degree)
 
         fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['previous_month_complete_nonentity'], name="Previous Month Non-Entity"), row=2, col=2)
         fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['previous_month_complete_secret_sync'], name="Previous Month Secret Sync"), row=2, col=3)
@@ -144,24 +188,35 @@ def process_and_plot(json_data, num_months):
             showlegend=False
         )
 
-        return fig
+        return fig, output_df, average_clients  # Return output_df and average clients
     else:
-        return None
+        return None, None, None
 
-# Combined callback function to update the graph when a file is uploaded or the number of months changes
+# Combined callback function to update the graph and table when a file is uploaded, trendline options are changed, or the number of months changes
 @app.callback(
-    Output('output-graph', 'figure'),
+    [Output('output-graph', 'figure'),
+     Output('estimates-table', 'data'),
+     Output('average-clients', 'children')],
     [Input('upload-data', 'contents'),
-     Input('num-months', 'value')]  # Add the input for number of additional months
+     Input('num-months', 'value'),
+     Input('show-trendline', 'value'),
+     Input('trendline-degree', 'value')]  # Add the input for number of additional months and polynomial degree
 )
-def update_output(contents, num_months):
+def update_output(contents, num_months, show_trendline, degree):
     if contents is not None:
         json_data = parse_json(contents)
         # Ensure num_months is valid; default to 0 if None
         num_months = num_months if num_months is not None else 0
-        fig = process_and_plot(json_data, num_months)  # Pass the num_months
-        return fig
-    return {}
+        fig, output_df, average_clients = process_and_plot(json_data, num_months, show_trendline, degree)  # Pass the num_months and degree
+        
+        # Prepare data for the table
+        table_data = output_df.to_dict('records') if output_df is not None else []
+
+        # Calculate average clients display
+        avg_clients_display = f"Average Clients: Entity - {average_clients['Entity']:.2f}, Non-Entity - {average_clients['Non-Entity']:.2f}, Secret Sync - {average_clients['Secret Sync']:.2f}" if average_clients else "No data available"
+
+        return fig, table_data, avg_clients_display
+    return {}, [], "No data available"
 
 # Run the app
 if __name__ == '__main__':

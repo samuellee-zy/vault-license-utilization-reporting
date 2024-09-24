@@ -1,30 +1,30 @@
 /* Base styles */
 body {
-  font-family: "Inter", sans-serif; /* HashiCorp font */
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; /* Light background */
-  color: #333; /* Dark text */
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 /* Header styles */
 h1 {
   font-size: 2.5rem;
   font-weight: 600;
-  color: #6b6e73; /* Header color */
+  color: #6b6e73;
   margin-bottom: 20px;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #333; /* Sub-header color */
+  color: #333;
   margin-bottom: 15px;
 }
 
 /* Link styles */
 a {
-  color: #ffcf25; /* Link color */
+  color: #ffcf25;
   text-decoration: none;
 }
 
@@ -34,14 +34,86 @@ a:hover {
 
 /* Upload styles */
 #upload-data {
-  background-color: #ffffff; /* White background for upload box */
-  border: 2px solid #00bfb3; /* Border color */
+  background-color: #ffffff;
+  border: 2px solid #00bfb3;
   border-radius: 5px;
   transition: border-color 0.3s ease;
 }
 
 #upload-data:hover {
-  border-color: #009a8d; /* Darker border on hover */
+  border-color: #009a8d;
+}
+
+/* Input section styles */
+.input-section {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.input-section label {
+  font-weight: 600;
+}
+
+/* Input field styling */
+.input-section input,
+.input-section .dropdown,
+.input-section .checklist {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-section input {
+  width: 120px;
+}
+
+.input-section .dropdown {
+  width: 200px;
+}
+
+/* Fixing the dropdown outline and style */
+.input-section .dropdown .Select__control {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.input-section .dropdown .Select__single-value {
+  outline: none;
+  box-shadow: none;
+}
+
+.input-section .dropdown .Select__control:hover {
+  border: none;
+  box-shadow: none !important;
+}
+
+.input-section .dropdown .Select__control:focus {
+  outline: none !important;
+  border: 1px solid #00bfb3 !important;
+}
+
+/* Checklist for checkbox */
+.input-section .checklist {
+  display: flex;
+  align-items: center;
+}
+
+.input-section .checklist label {
+  margin-right: 8px;
+  order: 1; /* Label first */
+}
+
+.input-section .checklist input[type="checkbox"] {
+  order: 2; /* Checkbox second */
+  margin-left: 8px;
 }
 
 /* Graph styles */
@@ -54,7 +126,13 @@ a:hover {
   h1 {
     font-size: 2rem;
   }
+
   h2 {
     font-size: 1.25rem;
+  }
+
+  .input-section {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
