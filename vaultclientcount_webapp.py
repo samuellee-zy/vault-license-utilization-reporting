@@ -171,7 +171,7 @@ def process_and_plot(json_data, num_months, show_trendline, degree):
         )
 
         fig.add_annotation(
-            text="Previous Month Estimates",
+            text="Previous Month Complete",
             xref="paper", yref="paper",
             x=0.5, y=0.5,  # Adjust y for vertical spacing
             showarrow=False,
