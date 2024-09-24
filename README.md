@@ -93,7 +93,7 @@ docker logs <CONTAINER_ID>
 
 ## Contributing
 
-Feel free to submit issues or pull requests if you want to contribute to the project.
+Note that this is a community project and is not supported by HashiCorp. Feel free to submit issues or pull requests if you want to contribute to the project.
 
 ## Acknowledgement
 
