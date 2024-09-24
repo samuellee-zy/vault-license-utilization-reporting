@@ -1,6 +1,6 @@
 # Vault Manual License Utilisation Dashboard
 
-The **Vault Manual License Utilisation Dashboard** is a web application built with Dash that allows users to visualize client license utilization data from a JSON data payload after generated the data bundle. Users can upload their data bundle, specify trendline parameters, and generate insights through both graphical representations and tabular data.
+The **Vault Manual License Utilisation Dashboard** is a web application built with Dash that allows users to visualize HashiCorp Vault client license utilization data from a JSON data payload after generated the data bundle. Users can upload their data bundle, specify trendline parameters, and generate insights through both graphical representations and tabular data.
 
 Note that the steps needs to generate the data bundle can be found here: [Manual license utilization reporting](https://developer.hashicorp.com/vault/docs/enterprise/license/manual-reporting)
 
