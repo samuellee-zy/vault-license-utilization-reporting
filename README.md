@@ -12,6 +12,10 @@ Note that the steps needs to generate the data bundle can be found here: [Manual
 - Display current and previous month estimates in a table format.
 - Generate graphical representations of the data with optional trendlines.
 
+## Screenshot
+
+<img src="screenshot/dashboard.png" alt="Vault Manual License Utilization Dashboard Screenshot" width="1100" />
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your local machine:
