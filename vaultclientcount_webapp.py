@@ -29,7 +29,7 @@ app.layout = html.Div([
         multiple=False
     ),
 
-    # Input section for trendline options (updated layout)
+    # Input section for trendline options
     html.Div(
         className="input-section",
         children=[
@@ -90,7 +90,6 @@ app.layout = html.Div([
     html.Div(id='average-clients')
 ])
 
-
 # Helper function to parse the uploaded JSON data
 def parse_json(contents):
     content_type, content_string = contents.split(',')
@@ -114,15 +113,17 @@ def process_and_plot(json_data, num_months, show_trendline, degree):
         
         output = []
         for _, row in latest_records.iterrows():
-            metrics = row['metrics']
+            metrics = row.get('metrics', {})
             output.append({
                 "year_month": str(row['year_month']),
-                "current_month_estimate_entity": metrics["clientcount.current_month_estimate.type.entity"]["value"],
-                "current_month_estimate_nonentity": metrics["clientcount.current_month_estimate.type.nonentity"]["value"],
-                "current_month_estimate_secret_sync": metrics["clientcount.current_month_estimate.type.secret_sync"]["value"],
-                "previous_month_complete_entity": metrics["clientcount.previous_month_complete.type.entity"]["value"],
-                "previous_month_complete_nonentity": metrics["clientcount.previous_month_complete.type.nonentity"]["value"],
-                "previous_month_complete_secret_sync": metrics["clientcount.previous_month_complete.type.secret_sync"]["value"]
+                "current_month_estimate_entity": metrics.get("clientcount.current_month_estimate.type.entity", {}).get("value", 0),
+                "current_month_estimate_nonentity": metrics.get("clientcount.current_month_estimate.type.nonentity", {}).get("value", 0),
+                "current_month_estimate_secret_sync": metrics.get("clientcount.current_month_estimate.type.secret_sync", {}).get("value", 0),
+                "current_month_estimate_acme_client": metrics.get("clientcount.current_month_estimate.type.acme_client", {}).get("value", 0),
+                "previous_month_complete_entity": metrics.get("clientcount.previous_month_complete.type.entity", {}).get("value", 0),
+                "previous_month_complete_nonentity": metrics.get("clientcount.previous_month_complete.type.nonentity", {}).get("value", 0),
+                "previous_month_complete_secret_sync": metrics.get("clientcount.previous_month_complete.type.secret_sync", {}).get("value", 0),
+                "previous_month_complete_acme_client": metrics.get("clientcount.previous_month_complete.type.acme_client", {}).get("value", 0),
             })
         
         # Convert to DataFrame
@@ -141,6 +142,10 @@ def process_and_plot(json_data, num_months, show_trendline, degree):
             "Secret Sync": {
                 "current_month_estimate": output_df["current_month_estimate_secret_sync"].mean(),
                 "previous_month_complete": output_df["previous_month_complete_secret_sync"].mean()
+            },
+            "Acme Client": {
+                "current_month_estimate": output_df["current_month_estimate_acme_client"].mean(),
+                "previous_month_complete": output_df["previous_month_complete_acme_client"].mean()
             }
         }
 
@@ -151,14 +156,16 @@ def process_and_plot(json_data, num_months, show_trendline, degree):
             {"metric": "Non-Entity", "current_month_estimate": average_clients["Non-Entity"]["current_month_estimate"], 
              "previous_month_complete": average_clients["Non-Entity"]["previous_month_complete"]},
             {"metric": "Secret Sync", "current_month_estimate": average_clients["Secret Sync"]["current_month_estimate"], 
-             "previous_month_complete": average_clients["Secret Sync"]["previous_month_complete"]}
+             "previous_month_complete": average_clients["Secret Sync"]["previous_month_complete"]},
+            {"metric": "Acme Client", "current_month_estimate": average_clients["Acme Client"]["current_month_estimate"], 
+             "previous_month_complete": average_clients["Acme Client"]["previous_month_complete"]}
         ]
 
         # Create Plotly figure with subplots
         fig = make_subplots(
-            rows=2, cols=3,
-            subplot_titles=("Entity Estimate", "Non-Entity Estimate", "Secret Sync Estimate", 
-                            "Previous Month Entity", "Previous Month Non-Entity", "Previous Month Secret Sync")
+            rows=2, cols=4,
+            subplot_titles=("Entity Estimate", "Non-Entity Estimate", "Secret Sync Estimate", "Acme Client Estimate",
+                            "Previous Month Entity", "Previous Month Non-Entity", "Previous Month Secret Sync", "Previous Month Acme Client")
         )
 
         # Add titles for the rows
@@ -210,13 +217,25 @@ def process_and_plot(json_data, num_months, show_trendline, degree):
         add_trendline(fig, np.arange(len(output_df['current_month_estimate_entity'])), output_df['current_month_estimate_entity'], 1, 1, degree)
 
         fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['current_month_estimate_nonentity'], name="Non-Entity Estimate"), row=1, col=2)
+        add_trendline(fig, np.arange(len(output_df['current_month_estimate_nonentity'])), output_df['current_month_estimate_nonentity'], 1, 2, degree)
+
         fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['current_month_estimate_secret_sync'], name="Secret Sync Estimate"), row=1, col=3)
-        
+        add_trendline(fig, np.arange(len(output_df['current_month_estimate_secret_sync'])), output_df['current_month_estimate_secret_sync'], 1, 3, degree)
+
+        fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['current_month_estimate_acme_client'], name="Acme Client Estimate"), row=1, col=4)
+        add_trendline(fig, np.arange(len(output_df['current_month_estimate_acme_client'])), output_df['current_month_estimate_acme_client'], 1, 4, degree)
+
         fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['previous_month_complete_entity'], name="Previous Month Entity"), row=2, col=1)
         add_trendline(fig, np.arange(len(output_df['previous_month_complete_entity'])), output_df['previous_month_complete_entity'], 2, 1, degree)
 
         fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['previous_month_complete_nonentity'], name="Previous Month Non-Entity"), row=2, col=2)
+        add_trendline(fig, np.arange(len(output_df['previous_month_complete_nonentity'])), output_df['previous_month_complete_nonentity'], 2, 2, degree)
+
         fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['previous_month_complete_secret_sync'], name="Previous Month Secret Sync"), row=2, col=3)
+        add_trendline(fig, np.arange(len(output_df['previous_month_complete_secret_sync'])), output_df['previous_month_complete_secret_sync'], 2, 3, degree)
+
+        fig.add_trace(go.Bar(x=output_df['year_month'], y=output_df['previous_month_complete_acme_client'], name="Previous Month Acme Client"), row=2, col=4)
+        add_trendline(fig, np.arange(len(output_df['previous_month_complete_acme_client'])), output_df['previous_month_complete_acme_client'], 2, 4, degree)
 
         # Update layout
         fig.update_layout(
@@ -227,31 +246,27 @@ def process_and_plot(json_data, num_months, show_trendline, degree):
         )
 
         return output_df, fig, average_clients_table
-
-    # Return empty values if the DataFrame is not valid
+    
     return pd.DataFrame(), go.Figure(), []
 
-# Combined callback function to update the graph and tables when a file is uploaded, trendline options are changed, or the number of months changes
+# Callback for file upload
 @app.callback(
-    [Output('output-graph', 'figure'),
-     Output('estimates-table', 'data'),
-     Output('average-clients-table', 'data')],
-    [Input('upload-data', 'contents'),
-     Input('num-months', 'value'),
-     Input('show-trendline', 'value'),
-     Input('trendline-degree', 'value')]
+    Output('estimates-table', 'data'),
+    Output('average-clients-table', 'data'),
+    Output('output-graph', 'figure'),
+    Input('upload-data', 'contents'),
+    Input('num-months', 'value'),
+    Input('show-trendline', 'value'),
+    Input('trendline-degree', 'value'),
 )
 def update_output(contents, num_months, show_trendline, degree):
     if contents is None:
-        return go.Figure(), [], []
+        return [], [], go.Figure()
 
     json_data = parse_json(contents)
-    estimates_df, figure, average_clients_table = process_and_plot(json_data, num_months, show_trendline, degree)
-
-    # Convert estimates DataFrame to the format required by the DataTable
-    estimates_data = estimates_df.to_dict('records')
-
-    return figure, estimates_data, average_clients_table
+    output_df, fig, average_clients_table = process_and_plot(json_data, num_months, show_trendline, degree)
+    
+    return output_df.to_dict('records'), average_clients_table, fig
 
 # Run the app
 if __name__ == '__main__':

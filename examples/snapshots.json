@@ -1,0 +1,3429 @@
+{
+  "version": "2",
+  "mode": "manual",
+  "timestamp": "2024-08-27T22:43:41.54152137Z",
+  "signature": "c51a418a943667a35b6b4b6f014ba5bd94530181ffe7344988bbbf9d3cec6854",
+  "checksum": 2919400994065523000,
+  "snapshots": [
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-01-05T15:38:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 52,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 114,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 475,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 10,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 12,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4436,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 303,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 94,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-01-19T13:28:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 37,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 682,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 475,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 110,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 43,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1046,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 367,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 5,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-01-08T14:21:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 2,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 963,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 4,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 67,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 17,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3700,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 187,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 100,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-01-08T19:24:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 6,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 665,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 358,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 223,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 33,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4181,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 161,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 36,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-01-18T11:36:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 30,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 364,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 176,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 4,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 4,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4277,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 150,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 47,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-02-13T14:25:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 6,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 624,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 490,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 5,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 58,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3321,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 161,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 39,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-02-10T21:33:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 71,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 310,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 217,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 383,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 95,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3027,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 147,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 79,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-02-22T07:54:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 90,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 733,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 345,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 272,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 61,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4326,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 160,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 27,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-02-10T19:32:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 91,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 323,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 110,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 52,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 77,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3676,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 214,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 9,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-02-15T23:30:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 1,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 383,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 77,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 227,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 39,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3646,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 381,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 88,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-03-20T05:01:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 89,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 323,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 43,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 129,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 69,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4899,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 233,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 59,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-03-22T09:46:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 49,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 234,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 46,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 94,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 49,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 870,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 16,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 15,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-03-14T11:16:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 26,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 496,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 19,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 400,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 21,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1074,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 36,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 56,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-03-22T09:50:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 61,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 490,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 108,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 115,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 25,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4813,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 1,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 41,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-03-15T00:02:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 22,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 49,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 102,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 66,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 69,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4224,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 138,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 91,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-04-22T04:56:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 6,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 883,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 316,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 290,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 29,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1622,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 242,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 76,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-04-24T22:06:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 64,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 987,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 105,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 248,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 69,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 87,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 236,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 12,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-04-07T00:11:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 44,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 764,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 83,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 387,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 17,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1347,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 341,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 86,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-04-17T07:28:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 61,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 918,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 509,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 47,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 85,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 2044,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 306,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 1,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-04-12T06:18:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 15,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 306,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 195,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 23,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 31,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 296,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 45,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 63,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-05-13T12:56:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 58,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 214,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 2,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 156,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 3,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3090,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 267,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 73,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-05-13T19:31:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 34,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 542,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 340,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 362,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 62,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3135,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 65,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 24,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-05-04T08:23:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 98,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 147,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 581,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 293,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 100,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3770,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 284,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 79,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-05-05T16:39:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 18,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 706,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 554,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 106,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 29,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1226,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 228,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 38,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-05-15T11:17:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 81,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 235,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 536,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 323,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 67,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4802,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 287,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 98,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-06-20T21:55:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 59,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 900,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 271,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 376,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 100,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3335,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 102,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 5,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-06-01T06:47:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 44,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 873,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 42,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 99,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 52,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4378,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 297,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 20,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-06-13T02:00:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 90,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 417,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 355,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 128,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 50,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3459,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 152,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 58,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-06-13T17:17:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 95,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 348,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 270,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 283,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 81,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1844,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 22,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 50,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-06-23T00:18:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 9,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 266,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 88,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 177,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 89,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4464,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 252,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 17,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-07-16T23:35:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 13,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 987,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 420,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 64,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 41,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 223,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 350,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 5,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-07-12T23:16:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 48,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 25,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 562,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 394,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 32,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 2133,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 15,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 79,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-07-21T08:28:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 56,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 351,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 409,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 37,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 10,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 347,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 294,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 58,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-07-08T03:57:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 67,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 165,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 292,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 323,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 59,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 936,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 222,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 28,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-07-26T06:51:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 18,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 115,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 327,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 295,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 83,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1197,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 69,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 79,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-08-26T13:11:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 57,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 559,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 527,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 356,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 71,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4396,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 103,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 47,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-07-31T23:26:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 68,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 206,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 67,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 274,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 31,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 9,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 97,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 37,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-07-31T09:57:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 61,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 958,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 230,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 277,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 75,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 515,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 336,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 54,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-08-18T18:22:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 92,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 154,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 195,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 100,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 45,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3723,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 49,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 83,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-08-18T00:11:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 48,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 983,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 545,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 257,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 59,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 2803,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 334,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 83,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-09-15T21:38:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 28,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 563,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 547,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 320,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 51,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1059,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 15,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 59,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-09-19T22:22:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 85,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 772,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 88,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 193,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 68,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4124,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 360,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 51,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-09-02T05:27:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 83,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 801,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 399,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 9,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 60,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3672,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 246,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 48,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-09-12T19:30:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 32,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 358,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 104,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 191,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 78,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1785,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 294,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 79,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-09-03T15:16:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 60,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 863,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 556,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 207,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 81,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1394,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 193,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 58,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-10-15T15:37:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 43,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 513,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 326,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 229,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 10,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 2057,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 0,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 57,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-10-22T12:59:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 41,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 990,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 386,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 70,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 14,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 375,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 65,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 81,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-10-20T00:09:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 51,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 645,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 514,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 16,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 65,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3137,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 356,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 41,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-10-24T18:11:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 32,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 167,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 547,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 354,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 26,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 139,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 203,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 75,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-10-09T02:06:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 50,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 120,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 286,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 386,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 80,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4190,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 292,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 57,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-11-05T17:13:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 24,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 94,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 177,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 324,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 72,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 2172,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 351,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 27,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-11-24T04:30:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 76,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 669,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 313,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 318,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 65,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 723,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 75,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 12,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-11-06T20:42:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 74,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 574,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 75,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 245,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 7,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1230,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 36,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 51,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-11-22T17:22:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 54,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 262,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 437,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 77,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 83,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3124,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 175,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 65,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-11-17T04:27:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 34,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 422,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 311,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 28,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 89,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3076,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 266,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 77,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-11-30T14:45:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 27,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 236,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 74,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 365,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 15,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 947,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 113,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 86,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-12-21T20:25:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 49,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 441,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 34,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 109,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 46,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 3381,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 389,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 12,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-12-06T00:28:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 82,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 126,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 549,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 167,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 0,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 1723,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 255,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 38,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-12-09T20:27:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 75,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 933,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 537,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 346,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 22,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 4926,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 121,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 19,
+          "mode": "write"
+        }
+      }
+    },
+    {
+      "snapshot_version": 2,
+      "id": "0001JWAY00BRF8TEXC9CVRHBAC",
+      "schema_version": "2.0.0",
+      "product": "vault",
+      "process_id": "01HP5NJS21HN50FY0CBS0SYGCH",
+      "product_version": "1.16.0+ent",
+      "license_id": "7d68b16a-74fe-3b9f-a1a7-08cf461fff1c",
+      "checksum": 6861637915450723051,
+      "metadata": {
+        "billing_start": "2023-05-04T00:00:00Z",
+        "cluster_id": "16d0ff5b-9d40-d7a7-384c-c9b95320c60e"
+      },
+      "timestamp": "2024-12-17T11:06:00-08:00",
+      "metrics": {
+        "clientcount.current_month_estimate.type.acme_client": {
+          "key": "clientcount.current_month_estimate.type.acme_client",
+          "value": 58,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.entity": {
+          "key": "clientcount.current_month_estimate.type.entity",
+          "value": 931,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.nonentity": {
+          "key": "clientcount.current_month_estimate.type.nonentity",
+          "value": 409,
+          "mode": "write"
+        },
+        "clientcount.current_month_estimate.type.secret_sync": {
+          "key": "clientcount.current_month_estimate.type.secret_sync",
+          "value": 344,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.acme_client": {
+          "key": "clientcount.previous_month_complete.type.acme_client",
+          "value": 44,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.entity": {
+          "key": "clientcount.previous_month_complete.type.entity",
+          "value": 2165,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.nonentity": {
+          "key": "clientcount.previous_month_complete.type.nonentity",
+          "value": 366,
+          "mode": "write"
+        },
+        "clientcount.previous_month_complete.type.secret_sync": {
+          "key": "clientcount.previous_month_complete.type.secret_sync",
+          "value": 2,
+          "mode": "write"
+        }
+      }
+    }
+  ]
+}
