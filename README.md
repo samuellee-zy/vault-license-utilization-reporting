@@ -98,3 +98,7 @@ Feel free to submit issues or pull requests if you want to contribute to the pro
 
 - To Shaun Stuart for the question that led to the creation of this project
 - To David Joo for the suggestions on making this more reusable for everyone
+- [Dash](https://dash.plotly.com/) for providing a powerful framework to build this web application.
+- [Plotly](https://plotly.com/python/) for the graphing library that makes visualizations easy.
+- [Pandas](https://pandas.pydata.org/) for data manipulation and analysis.
+- [ChatGPT](https://chatgpt.com/) for helping me create this webapp in a short amount of time.
